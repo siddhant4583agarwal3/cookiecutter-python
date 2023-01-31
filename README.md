@@ -52,4 +52,17 @@ For existing projects
 For existing projects that were not generated through *cruft* nor *cookiecutter*, one could make it
 compatible with *cruft* with following steps,
 
+1. Run the following cmd from the parent directory of current project, e.g. run from `~/projects/`
+   if the repo is placed under path `~/projects/{repo_name}`.
+    ```
+    cookiecutter https://github.com/tanlin2013/cookiecutter-python -f -v
+    ```
+   **Warning**: This will overwrite existing files (`-f`), please commit all changes beforehand.
+   Then you have to sort out all conflicts manually.
 
+2. Now we can link the repo with *cruft*,
+    ```
+    cruft link https://github.com/tanlin2013/cookiecutter-python
+    ```
+
+3. Commit new changes in `.pre-commit-config.yaml`, and it will automatically update/install hooks.
