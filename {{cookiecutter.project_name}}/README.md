@@ -16,3 +16,12 @@ _________________
 _________________
 
 **{{cookiecutter.project_name}}** {{cookiecutter.description}}
+
+Development guideline
+---------------------
+
+1. Install pre-commit hook on localhost (first time only)
+
+```
+pre-commit install --hook-type commit-msg --hook-type pre-push
+```
