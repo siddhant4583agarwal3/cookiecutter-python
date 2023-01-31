@@ -1,9 +1,10 @@
-{{cookiecutter.project_name}}
+# {{cookiecutter.project_name}}
 _________________
 
 [![PyPI version](https://badge.fury.io/py/{{cookiecutter.project_name}}.svg)](http://badge.fury.io/py/{{cookiecutter.project_name}})
-[![Test Status](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/workflows/Test/badge.svg?branch=develop)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions?query=workflow%3ATest)
-[![Lint Status](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/workflows/Lint/badge.svg?branch=develop)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions?query=workflow%3ALint)
+[![Docker build](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/build.yml/badge.svg)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/build.yml)
+[![Test Status](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/test.yml/badge.svg)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/test.yml)
+[![Lint Status](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/lint.yml/badge.svg)](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/actions/workflows/lint.yml)
 [![codecov](https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/branch/main/graph/badge.svg)](https://codecov.io/gh/{{cookiecutter.github_username}}/{{cookiecutter.project_name}})
 [![Join the chat at https://gitter.im/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}](https://badges.gitter.im/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}.svg)](https://gitter.im/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://pypi.python.org/pypi/{{cookiecutter.project_name}}/)
@@ -12,16 +13,10 @@ _________________
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://timothycrosley.github.io/isort/)
 _________________
 
-[Read Latest Documentation](https://{{cookiecutter.github_username}}.github.io/{{cookiecutter.project_name}}/) - [Browse GitHub Code Repository](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/)
+[Documentation](https://{{cookiecutter.github_username}}.github.io/{{cookiecutter.project_name}}/) |
 _________________
 
 **{{cookiecutter.project_name}}** {{cookiecutter.description}}
 
-Development guideline
----------------------
-
-1. Install pre-commit hook on localhost (first time only)
-
-```
-pre-commit install --hook-type commit-msg --hook-type pre-push
-```
+Installation
+------------
