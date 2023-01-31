@@ -1,7 +1,11 @@
 {% raw -%}
 name: Test
 
-on: [push, pull_request]
+on:
+  workflow_run:
+    workflows: [ "Docker build" ]
+    types:
+      - completed
 
 jobs:
   build:
@@ -65,7 +69,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     container:
-      image: docker://${{ github.repository }}:latest
+      image: docker://${{ github.repository }}:sha-${{ github.sha }}
     steps:
       - name: Install dev dependencies
         run: |
