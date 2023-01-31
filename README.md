@@ -7,13 +7,13 @@ with [cruft](https://cruft.github.io/cruft/)
 * To use:
 
 ```
-cruft create https://github.com/timothycrosley/cookiecutter-python/
+cruft create https://github.com/tanlin2013/cookiecutter-python/
 ```
 
 * Linking an existing project
 
 ```
-cruft link https://github.com/timothycrosley/cookiecutter-python/
+cruft link https://github.com/tanlin2013/cookiecutter-python/
 ```
 
 * Update a project
