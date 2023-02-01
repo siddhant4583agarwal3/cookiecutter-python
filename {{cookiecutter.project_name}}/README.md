@@ -20,3 +20,10 @@ _________________
 
 Installation
 ------------
+
+Getting Started
+---------------
+
+License
+-------
+© {{cookiecutter.full_name}}, 2023. Licensed under a [MIT](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/master/LICENSE) license.
