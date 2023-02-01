@@ -1,4 +1,5 @@
 # {{cookiecutter.project_name}}
+
 _________________
 
 [![PyPI version](https://badge.fury.io/py/{{cookiecutter.project_name}}.svg)](http://badge.fury.io/py/{{cookiecutter.project_name}})
@@ -26,4 +27,6 @@ Getting Started
 
 License
 -------
-© {{cookiecutter.full_name}}, 2023. Licensed under a [MIT](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/master/LICENSE) license.
+© {{cookiecutter.full_name}}, 2023. Licensed under
+a [MIT](https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/master/LICENSE)
+license.
