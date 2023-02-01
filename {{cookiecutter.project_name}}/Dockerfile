@@ -4,20 +4,16 @@ ENV PYTHONUNBUFFERED=true
 WORKDIR /app
 
 
-FROM python as poetry
+FROM python as runtime
 ENV POETRY_HOME=/opt/poetry
-ENV PATH="$POETRY_HOME/bin:$PATH"
-COPY . ./
-RUN apt update && \
-    apt-get install -y curl
+ENV PATH="/app/.venv/bin:$PATH"
+COPY . $WORKDIR
+
 RUN curl -sSL https://install.python-poetry.org | python3 - --version 1.3.2 &&  \
     poetry config virtualenvs.in-project true && \
-    poetry install --no-interaction --no-ansi -vvv --without dev
+    poetry install --no-interaction --no-ansi -vvv --without dev --all-extras
 
-
-FROM python as runtime
-ENV PATH="/app/.venv/bin:$PATH"
-COPY --from=poetry /app /app
 RUN apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
+
 ENTRYPOINT /bin/bash
