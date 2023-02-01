@@ -8,10 +8,12 @@ Welcome to {{cookiecutter.project_name}}'s documentation!
 
 .. mdinclude:: ../../README.md
 
+API references
+--------------
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
 
 
 Indices and tables
