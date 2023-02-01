@@ -22,7 +22,7 @@ _________________
 Installation
 ------------
 
-Getting Started
+Getting started
 ---------------
 
 License
