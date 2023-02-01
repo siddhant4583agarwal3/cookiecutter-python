@@ -12,10 +12,10 @@
 #
 import os
 import sys
+from importlib import metadata
 
 sys.path.insert(0, os.path.abspath("../.."))
 sys.path.insert(0, os.path.abspath("../../{{cookiecutter.project_name}}"))
-# from {{cookiecutter.project_name}} import __version__  # noqa: E402
 
 # -- Project information -----------------------------------------------------
 
@@ -24,9 +24,9 @@ copyright = "2023, {{cookiecutter.full_name}}"
 author = "{{cookiecutter.full_name}}"
 
 # The short X.Y version
-# version = __version__
+version = metadata.version("{{cookiecutter.project_name}}")
 # The full version, including alpha/beta/rc tags
-# release = __version__
+release = metadata.version("{{cookiecutter.project_name}}")
 
 # -- General configuration ---------------------------------------------------
 
