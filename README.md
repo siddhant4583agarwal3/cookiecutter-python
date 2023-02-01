@@ -45,6 +45,8 @@ Once a project is generated from the cruft template, there are fewer steps to go
 3. Set up CI secrets in GitHub settings of this repo, `secrets and variables`/`actions`,
    and click `New repository secrets`.
 
+4. Change python version in `Dockerfile`, `.pre-commit-config.yml` and CI/CD workflows if necessary.
+
 then you are ready to go.
 
 For existing projects
