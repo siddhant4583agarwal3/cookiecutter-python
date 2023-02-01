@@ -20,8 +20,8 @@ sys.path.insert(0, os.path.abspath("../../{{cookiecutter.project_name}}"))
 # -- Project information -----------------------------------------------------
 
 project = "{{cookiecutter.project_name}}"
-copyright = "2023, Tan Tao-Lin"
-author = "Tan Tao-Lin"
+copyright = "2023, {{cookiecutter.full_name}}"
+author = "{{cookiecutter.full_name}}"
 
 # The short X.Y version
 # version = __version__
@@ -69,7 +69,6 @@ autoclass_content = "both"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
 html_theme = "sphinx_book_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
