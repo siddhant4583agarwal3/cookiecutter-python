@@ -42,10 +42,13 @@ Once a project is generated from the cruft template, there are fewer steps to go
     pre-commit install --hook-type commit-msg --hook-type pre-push
     ```
 
-3. Set up CI secrets in GitHub settings of this repo, `secrets and variables`/`actions`,
+3. Set up CI secrets in GitHub, go to repo settings, `secrets and variables / actions`,
    and click `New repository secrets`.
 
 4. Change python version in `Dockerfile`, `.pre-commit-config.yml` and CI/CD workflows if necessary.
+
+5. Go to repo settings, `Pages / Build and deployment`, select `Deply from a branch`, and set the
+   branch to be `ph-pages` and associate to folder `/root`.
 
 then you are ready to go.
 
