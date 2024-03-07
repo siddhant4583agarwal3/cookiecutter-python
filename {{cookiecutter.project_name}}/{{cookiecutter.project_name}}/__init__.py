@@ -1,9 +1,8 @@
 import logging
-from importlib import metadata
 
 # -- Version -----------------------------------------------------------------
 
-__version__ = metadata.version(__name__)
+__version__ = "0.0.1"
 
 # -- Define logger and the associated formatter and handler ------------------
 

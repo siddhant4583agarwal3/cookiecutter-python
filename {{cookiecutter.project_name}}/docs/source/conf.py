@@ -12,7 +12,6 @@
 #
 import os
 import sys
-from importlib import metadata
 
 sys.path.insert(0, os.path.abspath("../.."))
 sys.path.insert(0, os.path.abspath("../../{{cookiecutter.project_name}}"))
@@ -24,9 +23,9 @@ copyright = "2023, {{cookiecutter.full_name}}"
 author = "{{cookiecutter.full_name}}"
 
 # The short X.Y version
-version = metadata.version("{{cookiecutter.project_name}}")
+version = "0.0.1"
 # The full version, including alpha/beta/rc tags
-release = metadata.version("{{cookiecutter.project_name}}")
+release = "0.0.1"
 
 # -- General configuration ---------------------------------------------------
 
