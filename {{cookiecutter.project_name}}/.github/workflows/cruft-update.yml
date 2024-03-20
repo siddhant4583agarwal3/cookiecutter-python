@@ -1,5 +1,6 @@
 {% raw %}
 # /.github/workflows/cruft-update.yml
+# a comment
 name: Update repository with Cruft
 permissions:
   contents: write
